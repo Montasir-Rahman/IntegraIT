@@ -2,7 +2,7 @@
     // Database credentials (consider storing them securely, e.g., in environment variables)
     $host = "localhost";
     $user = "montasir"; // Change this
-    $password = '202002003'; // Change this
+    $password = '01633605153'; // Change this
     $db_name = "login"; // Change this
 
     // Initialize the connection variable

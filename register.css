@@ -119,8 +119,8 @@ body{
   font-size: 20px;
   font-weight: bold;
   display: flex;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
 }
 
 .login_form input {
@@ -141,8 +141,8 @@ body{
 
 .login_form select{
   display: flex;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
   background-color: #FFF5E0;
   font-family: 'Kavoon', cursive;
   font-weight: bold;
