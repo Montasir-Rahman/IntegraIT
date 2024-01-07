@@ -1,28 +1,38 @@
 <?php
-include('new_con.php');  // Assuming database connection details are in this file
+$servername = "localhost";
+$username = "admin_user";
+$password = "12345";
+$dbname = "integrait";
 
-// Validate and sanitize user inputs
-$username = isset($_POST['user']) ? trim($_POST['user']) : '';
-$service = isset($_POST['service']) ? trim($_POST['service']) : '';
-$password = isset($_POST['pass']) ? trim($_POST['pass']) : '';
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Use prepared statements to prevent SQL injection
-$stmt = mysqli_prepare($con, "SELECT * FROM user_login WHERE BINARY username = ? AND service = ?");
-mysqli_stmt_bind_param($stmt, "ss", $username, $service);
-mysqli_stmt_execute($stmt);
-$result = mysqli_stmt_get_result($stmt);
-$count = mysqli_num_rows($result);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-if ($count == 1) {
-    // Proceed to check password only if the username for the service is found
-    $stmt = mysqli_prepare($con, "SELECT * FROM user_login WHERE BINARY username = ? AND service = ? AND password = ?");
-    mysqli_stmt_bind_param($stmt, "sss", $username, $service, $password);
-    mysqli_stmt_execute($stmt);
-    $result = mysqli_stmt_get_result($stmt);
-    $count = mysqli_num_rows($result);
+function sanitizeInput($input) {
+    $input = trim($input);
+    $input = stripslashes($input);
+    $input = htmlspecialchars($input);
+    return $input;
+}
 
-    if ($count == 1) {
-        // Username and password are valid
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = sanitizeInput($_POST["user"]);
+    $service = sanitizeInput($_POST["user_service"]);
+    $password = $_POST["user_password"];
+
+    $sql = "SELECT user_password FROM user_info WHERE username = ? AND user_service = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ss", $username, $service);
+    $stmt->execute();
+    $stmt->bind_result($hashedPassword);
+    $stmt->store_result();
+    $count = $stmt->num_rows;
+    $stmt->fetch();
+    $stmt->close();
+
+    if ($count == 1 && password_verify($password, $hashedPassword)) {
         switch ($service) {
             case 'project management':
                 header('Location: pm.html');
@@ -40,14 +50,12 @@ if ($count == 1) {
                 echo "<h1>Invalid service selected.</h1>";
                 break;
         }
+    } elseif ($count == 0) {
+        echo "<h1>Login Failed. User not found.</h1>";
     } else {
         echo "<h1>Login Failed. Invalid password.</h1>";
     }
-} else {
-    echo "<h1>Login Failed. Invalid username or service.</h1>";
 }
 
-// Close the statement and connection
-mysqli_stmt_close($stmt);
-mysqli_close($con);
+$conn->close();
 ?>
