@@ -5,43 +5,37 @@ body{
 }
 .header{
     background: #DAFFFB;
-    height: 241px;
-    width: 1332 px;
+    height: 160px;
+    width: 1121 px;
     margin: 0px 35px 5px 35px;
+    border-radius: 90px;
 }
 
 .header h1 {
-    margin-left: 350px;
-    margin-bottom: 0;
+    margin-left: 277px;
+    margin-bottom: 0px;
+    padding-top: 30px;
     text-align: left;
     color: #04364A;
-    font-size: 76px;
+    font-size: 64px;
     font-family: 'Marko One', sans;
 }
-
-  .header h2 {
-    margin-right: 370px;
-    margin-top: 0;
-    text-align: right;
-    color: #176B87;
-    font-size: 96px;
-    font-family: 'Lobster', cursive;
-  }
 
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #176B87;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;    
-  border-radius: 45px;
-  height: 75px;
-  width: 1224px;
-  margin: auto;
-  padding: auto;
-}
+    background-color: #176B87;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;    
+    border-radius: 45px;
+    height: 75px;
+    width: 1224px;
+    margin: auto;
+    padding: auto;
+  }
+
   
   /* Style the links inside the navigation bar */
 .topnav a {
@@ -58,8 +52,9 @@ body{
     height: 53px;
     width: 222px;
 }
+
   
-  /* Change the color of links on hover */
+/* Change the color of links on hover */
 .topnav a:hover {
     background-color: #64CCC5;
     color: black;
@@ -78,68 +73,59 @@ body{
     justify-content: center;
 }
 
-.login_form {
-    display: flex;
+.midnav{
+    background-color: #176B87;
+    display:flex;
+    flex-wrap: wrap;
     justify-content: center;
-    background-color: #35A29F;
-    height: 400px;
-    width: 350px;
-    border-radius: 45px;
-    padding: 10px 0px 50px 0px;
-    margin: 0px 505px 0px 505px;
+    align-items: center;
+    overflow: hidden;    
+    border-radius: 90px;
+    height: 500px;
+    width: 1224px;
+    margin: auto;
+    padding: auto;
 }
 
-.login_form p{
+.midnav .section-01 a{
+    float: left;
+    background-color: #64CCC5;
+    color: #000000;
     text-align: center;
-    font-family: 'Kavoon', cursive;
-    font-size: 28px;
-    color: white;
+    margin-left: 20px;
+    margin-top: 60px;
+    text-decoration: none;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 48px;
     border-radius: 45px;
-    background-color: #000000;
-
+    height: 150px;
+    width: 300px;
+    
 }
 
-.login_form label {
-    font-family: 'Kavoon', cursive;
-    font-size: 20px;
-    font-weight: bold;
-    padding-right: 5px;
+.midnav .section-02 a{
+    float: left;
+    background-color: #64CCC5;
+    color: #000000;
     text-align: center;
-    display: block; /* Set labels as block-level elements */
-    margin-right: 10px; /* Adjust margin for spacing */
-}
-
-.login_form input {
-    background-color: #FFF5E0;
-    height: 35px;
-    width: 240px;
-    margin-left: 45px;
-    margin-top: 5px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    padding-left: 0px;
+    text-decoration: none;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 48px;
     border-radius: 45px;
-    text-align: center;
-    border-color: black;
-    font-family: 'Kavoon',cursive;
-    font-weight: bold;
-    font-size: 16px;
+    height: 150px;
+    width: 300px;
+    
 }
 
-
-.login_form select{
-    background-color: #FFF5E0;
-    font-family: 'Kavoon', cursive;
-    font-weight: bold;
-    font-size: 16px;
-    color: black;
-    height: 50px;
-    width: 240px;
-    margin-left: 45px;
-    border-radius: 45px;
-    text-align: right;
-    display: block; /* Set inputs as block-level elements */
-    /* margin-left: auto; Align inputs to the right */
-    text-align: center;
+.midnav a.new_special {
+    display: flex;
+    margin-left: 4.8px;
+    align-items: center;
+    justify-content: center;
 }
-
 
 .footer {
   display: flex;

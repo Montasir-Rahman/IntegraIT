@@ -19,7 +19,7 @@ body{
     font-family: 'Marko One', sans;
 }
 
-  .header h2 {
+.header h2 {
     margin-right: 370px;
     margin-top: 0;
     text-align: right;
@@ -31,41 +31,51 @@ body{
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #176B87;
-    display:flex;
-    justify-content: center;
-    overflow: hidden;    
-    border-radius: 45px;
-    height: 75px;
-    width: 1224px;
-    margin: auto;
-  }
-  
-  /* Style the links inside the navigation bar */
+  background-color: #176B87;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;    
+  border-radius: 45px;
+  height: 75px;
+  width: 1224px;
+  margin: auto;
+  padding: auto;
+}
+
+/* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: auto;
-    margin: auto;
-    text-decoration: none;
-    font-family: 'Kavoon', cursive;
-    font-size: 20px;
-    border-radius: 45px;
-    height: 53px;
-    width: 222px;
+  float: left;
+  background-color: #64CCC5;
+  color: #000000;
+  text-align: center;
+  /* padding-left: 22.8px; */
+  margin-left: 14.8px;
+  text-decoration: none;
+  font-family: 'Kavoon', cursive;
+  font-size: 20px;
+  border-radius: 45px;
+  height: 53px;
+  width: 222px;
 }
   
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #64CCC5;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #64CCC5;
+  color: black;
+}
+
+/* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.special {
+  display: flex;
+  margin-left: 4.8px;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-container {

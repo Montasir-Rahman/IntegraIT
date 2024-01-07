@@ -3,42 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resource Management</title>
-    <link rel="stylesheet" href="style.css">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="register.css">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kavoon+One&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+
+
 
 
 </head>
 <body>
     <div class="header">
-        <h1>Resource Management</h1>
+        <h1>Welcome!</h1>
+        <h2>IntegraIT</h2>
     </div>
     <br>
     <div class="topnav">
-        <a class="special" href="homepage.html">Home</a>
+        <a class="special" href="homepage.html"><span>Home</span></a>
         <a href="login.html">Project <br>Management </a>
-        <a class="active" href="login.html">Resource <br> Management </a>
+        <a href="login.html">Resource <br>Management </a>
         <a href="login.html">Client <br>Management</a>
         <a href="login.html"> Financial <br>Management</a>
     </div>
     <br>
-    <div class="midnav">
-        <div class="section-01">
-            <a class="new_special" href="#">Employee Management </a>
-            <a href="#">Workload Management </a>
-            <a href="#">Availability Tracking</a>
-        </div>
-        <div class="section-02">
-            <a href="#">Resource Allocation</a>
-            <a href="#">Skill Gap <br> Analysis</a>
-        </div>
+    <div class="login_form">
+        <!-- <form name = "f1" action = "authentication.php" onsubmit = "return validation()" method = "POST"></form> -->
+        <form name = "f1" action = "new_reg.php" onsubmit = "return validation()" method = "POST">
+            <p>Registration Panel</p>
+            <label for="username">Username </label>
+            <input type="text" id="user" name="user">
+            <label for="password">Password</label>
+            <input type="password" id="pass" name="pass"><br><br>
+            <input type="submit" id="btn" value="Register">
+            
+        </form>
     </div>
-    <br>
     <div class="footer">
         <div class="address">
             <p>Address: <br> Purbachal American City, Kanchon 1460</p>

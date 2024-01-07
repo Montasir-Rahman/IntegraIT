@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>User Login</title>
     <link rel="stylesheet" href="login.css">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
@@ -22,16 +22,16 @@
     </div>
     <br>
     <div class="topnav">
-        <a class="active" href="homepage.html">Home</a>
+        <a class="special" href="homepage.html"><span>Home</span></a>
         <a href="login.html">Project <br>Management </a>
         <a href="login.html">Resource <br>Management </a>
-        <a href="login.html">Client & Contract <br>Management</a>
+        <a href="login.html">Client <br>Management</a>
         <a href="login.html"> Financial <br>Management</a>
     </div>
     <br>
     <div class="login_form">
         <!-- <form name = "f1" action = "authentication.php" onsubmit = "return validation()" method = "POST"></form> -->
-        <form name = "f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">
+        <form name = "f1" action = "new_auth.php" onsubmit = "return validation()" method = "POST">
             <p>Login Panel</p>
             <label for="username">Username </label>
             <input type="text" id="user" name="user">
@@ -46,6 +46,8 @@
             <label for="password">Password</label>
             <input type="password" id="pass" name="pass"><br><br>
             <input type="submit" id="btn" value="Login">
+            <input type="button" value="Register Now" onclick="window.location.href = 'register.html'">
+
             
         </form>
     </div>
