@@ -78,66 +78,83 @@ body{
     justify-content: center;
 }
 
+.midnav{
+  background-color: #176B87;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;    
+  border-radius: 90px;
+  height: 550px;
+  width: 1224px;
+  margin: auto;
+  padding: auto;
+}
+
 .login_form {
-    display: flex;
-    justify-content: center;
-    background-color: #35A29F;
-    height: 400px;
-    width: 350px;
-    border-radius: 45px;
-    padding: 10px 0px 50px 0px;
-    margin: 0px 505px 0px 505px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #35A29F;
+  height: 500px;
+  width: 500px;
+  border-radius: 45px;
 }
 
 .login_form p{
-    text-align: center;
-    font-family: 'Kavoon', cursive;
-    font-size: 28px;
-    color: white;
-    border-radius: 45px;
-    background-color: #000000;
+  text-align: center;
+  font-family: 'Kavoon', cursive;
+  font-size: 28px;
+  color: white;
+  border-radius: 45px;
+  background-color: #000000;
+  margin-bottom: 2px;
+  margin-top: 0px;
 
 }
 
 .login_form label {
-    font-family: 'Kavoon', cursive;
-    font-size: 20px;
-    font-weight: bold;
-    padding-right: 5px;
-    text-align: center;
-    display: block; /* Set labels as block-level elements */
-    margin-right: 10px; /* Adjust margin for spacing */
+  font-family: 'Kavoon', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: left;
+  align-items: left;
 }
 
 .login_form input {
-    background-color: #FFF5E0;
-    height: 35px;
-    width: 240px;
-    margin-left: 0px;
-    margin-top: 5px;
-    border-radius: 45px;
-    text-align: center;
-    border-color: black;
-    font-family: 'Kavoon',cursive;
-    font-weight: bold;
-    font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF5E0;
+  height: 30px;
+  width: 280px;
+  margin-top: 6px;
+  border-radius: 45px;
+  border: none;
+  font-family: 'Kavoon',cursive;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 
 .login_form select{
-    background-color: #FFF5E0;
-    font-family: 'Kavoon', cursive;
-    font-weight: bold;
-    font-size: 16px;
-    color: black;
-    height: 50px;
-    width: 240px;
-    margin-left: 45px;
-    border-radius: 45px;
-    text-align: right;
-    display: block; /* Set inputs as block-level elements */
-    /* margin-left: auto; Align inputs to the right */
-    text-align: center;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-color: #FFF5E0;
+  font-family: 'Kavoon', cursive;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  height: 40px;
+  width: 285px;
+  /* margin-left: 45px; */
+  border-radius: 45px;
+  /* text-align: right;
+  display: block; 
+  text-align: center; */
 }
 
 

@@ -29,18 +29,29 @@
         <a href="login.html"> Financial <br>Management</a>
     </div>
     <br>
-    <div class="login_form">
-        <!-- <form name = "f1" action = "authentication.php" onsubmit = "return validation()" method = "POST"></form> -->
-        <form name = "f1" action = "new_reg.php" onsubmit = "return validation()" method = "POST">
-            <p>Registration Panel</p>
-            <label for="username">Username </label>
-            <input type="text" id="user" name="user">
-            <label for="password">Password</label>
-            <input type="password" id="pass" name="pass"><br><br>
-            <input type="submit" id="btn" value="Register">
-            
-        </form>
+    <div class="midnav">
+        <div class="login_form">
+            <!-- <form name = "f1" action = "authentication.php" onsubmit = "return validation()" method = "POST"></form> -->
+            <form name = "f1" action = "new_reg.php" onsubmit = "return validation()" method = "POST">
+                <p>Registration Panel</p>
+                <label for="username">Username </label>
+                <input type="text" id="user" name="user">
+                <label for="service">Service</label>
+                <select name="service" id="service">
+                    <label for="service">Service</label>
+                    <option value="project management">Project Management</option>
+                    <option value="resource management">Resource Management</option>
+                    <option value="client & contact management">Client & Contact Management</option>
+                    <option value="financial management">Financial Management</option>
+                </select>
+                <label for="password">Password</label>
+                <input type="password" id="pass" name="pass"><br><br>
+                <input type="submit" id="btn" value="Register">
+                
+            </form>
+        </div>
     </div>
+    
     <div class="footer">
         <div class="address">
             <p>Address: <br> Purbachal American City, Kanchon 1460</p>

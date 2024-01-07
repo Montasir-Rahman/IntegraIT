@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling</title>
+    <link rel="stylesheet" href="newstyle.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kavoon+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="header">
+        <h1>Scheduling</h1>
+    </div>
+    <br>
+    <div class="topnav">
+        <a class="special" href="homepage.html">Home</a>
+        <a class="active" href="login.html">Project <br>Management </a>
+        <a href="login.html">Resource <br>Management </a>
+        <a href="login.html">Client <br>Management</a>
+        <a href="login.html"> Financial <br>Management</a>
+    </div>
+    <br>
+    <div class="midnav">
+        <div class="schedule_form">
+            <form name="f2" action="scheduling.php" onsubmit = "return validation()" method = "POST">
+                <p>Schedule Project</p>
+                <label for="project_id">Project_ID:</label>
+                <input type="text" name="pid" id="pid">
+                <label for="project_name">Project_Name:</label>
+                <input type="text" name="pname" id="pname">
+                <label for="project_strat">Project_Start:</label>
+                <input type="date" name="pstart" id="pstart">
+                <label for="project_end">Project_End:</label>
+                <input type="date" name="pend" id="pend">
+                <label for="project_status">Project_Status:</label>
+                <select name="pstatus" id="pstatus">
+                    <label for="project_status">Project_Status</label>
+                    <option value="initiation">Inititation</option>
+                    <option value="planning">Planning</option>
+                    <option value="development">Development</option>
+                    <option value="release">Release</option>
+                    <option value="retirement">Retirement</option>
+                </select>
+                <div class="special">
+                    <input type="submit" id="btn" value="Schedule">
+                </div>
+            </form>
+        </div>   
+    </div>
+    <br>
+    <div class="footer">
+        <div class="address">
+            <p>Address: <br> Purbachal American City, Kanchon 1460</p>
+        </div>
+        <div class="cellphone">
+            <p>Cellphone: <br>01757074301, 01757074302,<br> 01757074303, 01757074304</p>
+        </div>
+    </div>
+
+    
+
+    
+   
+</body>
+</html>

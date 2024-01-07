@@ -4,14 +4,15 @@ include('reg_con.php');  // Assuming database connection details are in this fil
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validate and sanitize user inputs
     $username = isset($_POST['user']) ? trim($_POST['user']) : '';
+    $service = isset($_POST['service']) ? trim($_POST['service']) : '';
     $password = isset($_POST['pass']) ? trim($_POST['pass']) : '';
 
     // Hash the password before storing it
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
     // Use prepared statement to prevent SQL injection
-    $stmt = mysqli_prepare($con, "INSERT INTO user_login (username, password) VALUES (?, ?)");
-    mysqli_stmt_bind_param($stmt, "ss", $username, $hashedPassword);
+    $stmt = mysqli_prepare($con, "INSERT INTO user_login (username, service, password) VALUES (?, ?, ?)");
+    mysqli_stmt_bind_param($stmt, "ss", $username, $service, $hashedPassword);
 
     // Execute the statement
     if (mysqli_stmt_execute($stmt)) {

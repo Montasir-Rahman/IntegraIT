@@ -82,50 +82,92 @@ body{
     align-items: center;
     overflow: hidden;    
     border-radius: 90px;
-    height: 500px;
+    height: 550px;
     width: 1224px;
     margin: auto;
     padding: auto;
 }
 
-.midnav .section-01 a{
-    float: left;
-    background-color: #64CCC5;
-    color: #000000;
-    text-align: center;
-    margin-left: 20px;
-    margin-top: 60px;
-    text-decoration: none;
-    font-family: 'Jockey One', sans-serif;
-    font-size: 48px;
-    border-radius: 45px;
-    height: 150px;
-    width: 300px;
-    
-}
 
-.midnav .section-02 a{
-    float: left;
-    background-color: #64CCC5;
-    color: #000000;
-    text-align: center;
-    margin-bottom: 60px;
-    margin-left: 20px;
-    padding-left: 0px;
-    text-decoration: none;
-    font-family: 'Jockey One', sans-serif;
-    font-size: 48px;
-    border-radius: 45px;
-    height: 150px;
-    width: 300px;
-    
-}
-
-.midnav a.new_special {
+.schedule_form {
     display: flex;
-    margin-left: 4.8px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background-color: #35A29F;
+    height: 500px;
+    width: 500px;
+    border-radius: 45px;
+    /* padding: 10px 0px 50px 0px;
+    margin: 0px 505px 0px 505px; */
+}
+
+.schedule_form p{
+    text-align: center;
+    font-family: 'Kavoon', cursive;
+    font-size: 28px;
+    color: white;
+    border-radius: 45px;
+    background-color: #000000;
+    margin-bottom: 2px;
+    margin-top: 0px;
+
+}
+
+.schedule_form label {
+    font-family: 'Kavoon', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.schedule_form input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF5E0;
+    height: 30px;
+    width: 280px;
+    margin-top: 6px;
+    border-radius: 45px;
+    border: none;
+    font-family: 'Kavoon',cursive;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.schedule_form select{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background-color: #FFF5E0;
+    font-family: 'Kavoon', cursive;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    height: 40px;
+    width: 285px;
+    /* margin-left: 45px; */
+    border-radius: 45px;
+    /* text-align: right;
+    display: block; 
+    text-align: center; */
+}
+
+.special input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF5E0;
+    height: 40px;
+    width: 290px;
+    margin-top: 10px;
+    border-radius: 45px;
+    font-family: 'Kavoon',cursive;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .footer {
