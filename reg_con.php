@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
-$user = "admin_user";
-$password = "12345";
+$user = "root";
+$password = "";
 $db_name = "integrait";
 
 $con = mysqli_connect($host, $user, $password, $db_name);

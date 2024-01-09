@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Management</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Project Teams</title>
+    <link rel="stylesheet" href="newstyle.css">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kavoon+One&display=swap">
@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>Project Management</h1>
+        <h1>Project Teams</h1>
     </div>
     <br>
     <div class="topnav">
@@ -28,15 +28,22 @@
     </div>
     <br>
     <div class="midnav">
-        <div class="section-01">
-            <a class="new_special" href="scheduling.html">Scheduling</a>
-            <a href="project_teams.html">Project <br> Teams</a>
-            <a href="#">Project Timelines</a>
-        </div>
-        <div class="section-02">
-            <a href="#">Milestone Tracking</a>
-            <a href="#">Bug <br> Tracking</a>
-        </div>
+        <div class="schedule_form">
+            <form name="f2" action="project_teams.php" onsubmit = "return validation()" method = "POST">
+                <p>Project Team</p>
+                <label for="project_id">Project_ID:</label>
+                <input type="text" name="pid" id="pid">
+                <label for="project_name">Project_Name:</label>
+                <input type="text" name="pname" id="pname">
+                <label for="member_01">Member_01</label>
+                <input type="text" name="member1" id="member1">
+                <label for="member_02">Member_02</label>
+                <input type="text" name="member2" id="member2">
+                <div class="special">
+                    <input type="submit" id="btn" value="Submit">
+                </div>
+            </form>
+        </div>   
     </div>
     <br>
     <div class="footer">

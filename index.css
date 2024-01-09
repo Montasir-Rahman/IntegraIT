@@ -1,0 +1,247 @@
+.project-management-child {
+  position: absolute;
+  top: 39px;
+  left: 160px;
+  border-radius: 90px;
+  background-color: var(--color-darkseagreen);
+  width: 1121px;
+  height: 151px;
+}
+.project-management-inner,
+.project-management-item {
+  position: absolute;
+  top: 789px;
+  border-radius: var(--br-101xl);
+  width: 395px;
+  height: 175px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+.project-management-item {
+  left: 51px;
+  background-color: var(--color-mediumturquoise);
+}
+.project-management-inner {
+  left: 1214px;
+  background-color: #b2d6ff;
+}
+.project {
+  margin: 0;
+}
+.project-collaboration {
+  top: 685px;
+  left: 1228px;
+  text-align: left;
+}
+.centralized-system,
+.project-collaboration,
+.rectangle-div {
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+.rectangle-div {
+  top: 789px;
+  left: 280px;
+  border-radius: var(--br-101xl);
+  background-color: var(--color-darkseagreen);
+  width: 395px;
+  height: 175px;
+}
+.centralized-system {
+  top: 749px;
+  left: 333px;
+}
+.rectangle-icon {
+  position: absolute;
+  top: 394px;
+  left: 509px;
+  border-radius: var(--br-101xl);
+  width: 175px;
+  height: 395px;
+  object-fit: contain;
+}
+.project-management-child1,
+.transactional-history {
+  position: absolute;
+  top: 713px;
+  left: 529px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+.project-management-child1 {
+  top: 789px;
+  left: 738px;
+  border-radius: var(--br-101xl);
+  background-color: var(--color-teal);
+  width: 395px;
+  height: 175px;
+}
+.security-measure {
+  top: 721px;
+  left: 784px;
+  text-align: left;
+}
+.customer-feedback,
+.project-management-child2,
+.security-measure {
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+.project-management-child2 {
+  top: 789px;
+  left: 967px;
+  border-radius: var(--br-101xl);
+  background-color: #93b1a6;
+  width: 395px;
+  height: 175px;
+}
+.customer-feedback {
+  top: 765px;
+  left: 1021px;
+  text-align: left;
+}
+.client-contact {
+  position: absolute;
+  top: 34px;
+  left: 166px;
+  font-size: 62px;
+  font-family: var(--font-inknut-antiqua);
+}
+.contact-information {
+  position: absolute;
+  top: 767px;
+  left: 98px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+.project-management-child3,
+.project-management-child4 {
+  position: absolute;
+  top: 929px;
+  left: 0;
+  width: 1440px;
+  height: 95px;
+}
+.project-management-child3 {
+  background-color: #d9d9d9;
+}
+.project-management-child4 {
+  background-color: var(--color-teal);
+}
+.project-management-child5 {
+  position: absolute;
+  top: 256px;
+  left: 119px;
+  border-radius: var(--br-26xl);
+  width: 1237px;
+  height: 82px;
+  object-fit: cover;
+}
+.project-management-child6 {
+  position: absolute;
+  top: 270px;
+  left: 1106px;
+  border-radius: var(--br-26xl);
+  background-color: var(--color-mediumturquoise);
+  width: 217px;
+  height: 51px;
+}
+.financial-management,
+.text {
+  position: absolute;
+  font-family: var(--font-kavoon);
+  white-space: pre-wrap;
+  text-align: left;
+}
+.financial-management {
+  top: 286px;
+  left: 1120px;
+  font-size: 18px;
+}
+.text {
+  top: 250px;
+  left: 11px;
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+}
+.project-management-child7 {
+  position: absolute;
+  top: 270px;
+  left: 634px;
+  border-radius: var(--br-26xl);
+  background-color: var(--color-mediumturquoise);
+  width: 217px;
+  height: 51px;
+}
+.resource-management {
+  position: absolute;
+  top: 270px;
+  left: 661px;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-kavoon);
+  display: inline-block;
+  width: 153px;
+  height: 26px;
+  cursor: pointer;
+}
+.project-management-child10,
+.project-management-child8,
+.project-management-child9 {
+  position: absolute;
+  top: 270px;
+  left: 865px;
+  border-radius: var(--br-26xl);
+  background-color: var(--color-mediumturquoise);
+  width: 221px;
+  height: 51px;
+}
+.project-management-child10,
+.project-management-child9 {
+  top: 268px;
+  left: 392px;
+  width: 222px;
+  height: 53px;
+}
+.project-management-child10 {
+  top: 270px;
+  left: 150px;
+}
+.client-contract-container,
+.home,
+.project-management1 {
+  position: absolute;
+  top: 283px;
+  left: 185px;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-kavoon);
+  display: inline-block;
+  width: 152px;
+  height: 27px;
+}
+.client-contract-container,
+.project-management1 {
+  top: 271px;
+  left: 871px;
+  width: 206px;
+  height: 29px;
+  cursor: pointer;
+}
+.project-management1 {
+  top: 270px;
+  left: 425px;
+  width: 152px;
+  height: 27px;
+}
+.project-management {
+  position: relative;
+  background-color: rgba(242, 247, 161, 0.84);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-jockey-one);
+}

@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "admin_user";
-$password = "12345";
+$username = "root";
+$password = "";
 $dbname = "integrait";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             case 'resource management':
                 header('Location: rm.html');
                 break;
-            case 'client & contact management':
+            case 'client management':
                 header('Location: ccm.html');
                 break;
             case 'financial management':

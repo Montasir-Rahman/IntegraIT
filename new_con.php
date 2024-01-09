@@ -1,7 +1,7 @@
 <?php
     $host = "localhost";
-    $user = "admin_user"; 
-    $password = "12345"; 
+    $user = "root"; 
+    $password = ""; 
     $db_name = "integrait";
 
 

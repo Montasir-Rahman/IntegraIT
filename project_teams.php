@@ -5,20 +5,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validate and sanitize user inputs
     $project_id = isset($_POST['pid']) ? trim($_POST['pid']) : '';
     $project_name = isset($_POST['pname']) ? trim($_POST['pname']) : '';
-    $project_start = isset($_POST['pstart']) ? trim($_POST['pstart']) : '';
-    $project_end = isset($_POST['pend']) ? trim($_POST['pend']) : '';
-    $project_status = isset($_POST['pstatus']) ? trim($_POST['pstatus']) : '';
+    $member_01 = isset($_POST['member1']) ? trim($_POST['member1']) : '';
+    $member_02 = isset($_POST['member2']) ? trim($_POST['member2']) : '';
 
     // Hash the password before storing it
     // $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
     // Use prepared statement to prevent SQL injection
-    $stmt = mysqli_prepare($con, "INSERT INTO scheduling (project_id, project_name, project_start, project_end, project_status) VALUES (?, ?, ?, ?, ?)");
-    mysqli_stmt_bind_param($stmt, "sssss", $project_id, $project_name, $project_start, $project_end, $project_status);
+    $stmt = mysqli_prepare($con, "INSERT INTO project_team (project_id, project_name, member_01, member_02) VALUES (?, ?, ?, ?)");
+    mysqli_stmt_bind_param($stmt, "ssss", $project_id, $project_name, $member_01, $member_02);
 
     // Execute the statement
     if (mysqli_stmt_execute($stmt)) {
-        header("Location: schedule_view.php");
+        header("Location: project_teams_view.php");
         exit(); 
     } else {
         echo "<p>Registration failed. Please try again later.</p>";
