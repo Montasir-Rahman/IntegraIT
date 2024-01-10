@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Management</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="newstyle.css">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kavoon+One&display=swap">
@@ -16,27 +16,34 @@
 </head>
 <body>
     <div class="header">
-        <h1>Client Management</h1>
+        <h1>Employee Management</h1>
     </div>
     <br>
     <div class="topnav">
         <a class="special" href="homepage.html">Home</a>
-        <a href="login.html">Project <br>Management </a>
+        <a class="active" href="login.html">Project <br>Management </a>
         <a href="login.html">Resource <br>Management </a>
-        <a class="active" href="login.html">Client <br> Management</a>
+        <a href="login.html">Client <br>Management</a>
         <a href="login.html"> Financial <br>Management</a>
     </div>
     <br>
     <div class="midnav">
-        <div class="section-01">
-            <a class="new_special" href="#">Client <br> Contacts</a>
-            <a href="#">Proposal Management</a>
-            <a href="#">Communication History</a>
-        </div>
-        <div class="section-02">
-            <a href="#">Quotation Generation</a>
-            <a href="client_feedbacks.php">Client <br> Feedbacks</a>
-        </div>
+        <div class="schedule_form">
+            <form name="f2" action="employee_management.php" onsubmit = "return validation()" method = "POST">
+                <p>Employee Management</p>
+                <label for="project_id">Employee_ID:</label>
+                <input type="text" name="eid" id="eid">
+                <label for="project_name">Employee_Name:</label>
+                <input type="text" name="ename" id="ename">
+                <label for="member_01">Contact:</label>
+                <input type="text" name="contact" id="contact">
+                <label for="member_02">Email:</label>
+                <input type="text" name="email" id="email">
+                <div class="special">
+                    <input type="submit" id="btn" value="Submit">
+                </div>
+            </form>
+        </div>   
     </div>
     <br>
     <div class="footer">
